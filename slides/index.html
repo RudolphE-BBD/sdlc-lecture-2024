@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SDLC</title>
+    <meta charset="utf-8">
+    <style>
+ 
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); 
+      @import url(https://fonts.googleapis.com/css?family=League+Gothic:400,700,400italic); 
+
+      :root {
+        --color-scale-purple-0: #eddeff;
+        --color-scale-purple-1: #e2c5ff;
+        --color-scale-purple-2: #d2a8ff;
+        --color-scale-purple-3: #bc8cff;
+        --color-scale-purple-4: #a371f7;
+        --color-scale-purple-5: #8957e5;
+        --color-scale-purple-6: #6e40c9;
+        --color-scale-purple-7: #553098;
+        --color-scale-purple-8: #3c1e70;
+        --color-scale-purple-9: #271052;
+        --color-ebony-clay: #161946;
+        --color-ebony-clay-light: #181e50;
+        --color-mystic:#eaf0f1;
+        --color-regent-gray: #8c949c;
+        --color-manatee:#8c8b9c;
+        --bbd-red:#cb181c;
+      }
+      body { 
+        font-family: 'Open Sans'; 
+        font-size: 24px;
+      }
+      h1, h2, h3 {
+        font-family: 'League Gothic';
+        letter-spacing: 1pt;
+        font-weight: normal;
+      }
+
+      .remark-code, .remark-inline-code {
+        font-family: 'Ubuntu Mono';
+        font-size: 24px;
+      }
+
+      .remark-slide-content {
+        background-color: var(--color-ebony-clay);
+        color: var(--color-mystic);
+      }
+
+      .dark {
+        color: var(--color-ebony-clay);
+      }
+
+      #source {
+        display: none;
+      }
+
+      a {
+        color: var(--color-mystic);
+        text-decoration: none;
+      }
+
+      img {
+        width: 90%;
+      }
+
+      .left-column {
+        color: var(--bbd-red);
+        width: 25%;
+        height: 92%;
+        float: left;
+        text-align: left;
+        border-right: 2px solid var(--color-mystic);
+      }
+
+      .left-column h3 {
+        text-indent: 1em;
+      }
+
+      .left-column h1:last-of-type, .left-column h3:last-child {
+          color: var(--color-mystic);          
+      }
+
+      .right-column {
+        width: 70%;
+        float: right;
+        padding-top: 1em;
+        text-align: left;
+      }
+
+      .right-column li {
+        font-size: 2.25rem;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <textarea id="source" hidden>
+
+class: middle, center
+name: aboutme
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+### Git (and GitHub) 
+
+# From source to deployment
+
+Rudolph Esterhuysen 
+
+Software Engineer (BBDSoftware)
+
+---
+class: middle, center
+name: sdlc
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+# SDLC
+
+![SDLC image](./images/sdlc.jpg)
+
+---
+class: middle, center
+name: agile
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+# Agile
+
+![Agile image](./images/agile.webp)
+
+---
+class: middle, center
+name: devops
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+# DevOps
+
+![CI/CD picture](./images/cicd.jpg)
+
+---
+class: middle, center
+name: plan-doc
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  ### Documentiation
+]
+.right-column[
+  # Tools for documenting
+  
+  * Atlassian
+   * Confluence
+  * Github
+   * Wiki
+  * Azure DevOps
+   * Wiki
+]
+
+---
+class: middle, center
+name: plan-plan
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  ### Documentiation
+  ### Planning
+]
+.right-column[
+  # Tools for planning
+  
+  * Atlassian
+   * JIRA
+   * Trello
+  * Github
+   * Projects
+  * Azure DevOps
+   * Boards
+]
+
+---
+class: middle, center
+name: plan-other
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  ### Documentiation
+  ### Planning
+  ### Other tools
+]
+.right-column[
+  # Tools for diagramming and UI design
+  * Figma
+  * [Draw.io](https://www.drawio.com/)
+
+  ## More on planning later
+]
+
+---
+class: middle, center
+name: build
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+]
+.right-column[
+  ## More than just writing code
+
+  * Coding tools
+  * Source control tools
+  * Compilers / build tools
+  * Dependency management
+]
+
+---
+class: middle, center
+name: build
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  ### Coding tools
+]
+.right-column[
+  ## More than just text editors
+
+  * Editors / IDEs
+    * Notepad / VI / EMACS
+    * VS Code / SublimeText / Notepad++
+    * Visual Studio / JetBrains IDEs / Eclipse
+]
+
+---
+class: middle, center
+name: build
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  ### Coding tools
+]
+.right-column[
+  ## Following coding standards
+
+  * Formatters
+  * Linters 
+    * ESLint
+    * SonarLint
+]
+
+---
+class: middle, center
+name: build
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  ### Coding tools
+  ### Source control
+]
+.right-column[
+  ## Git is ubiquitous
+
+  * Git
+  * Other (old or lesser known) 
+    * Mercurial (still used by Facebook)
+    * SVN
+    * CVS
+]
+
+---
+class: middle, center
+name: build
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  ### Coding tools
+  ### Source control
+  ### Build Tools
+]
+.right-column[
+  ## What does 'build' even mean
+
+  * rollup / webpack / parcel / vite 
+  * maven / gradle
+  * bazel / cmake / dotnet
+]
+
+---
+class: middle, center
+name: build
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  ### Coding tools
+  ### Source control
+  ### Build tools 
+  ### Dependency management
+]
+.right-column[
+  ## How do you enusre library and runtime consistency
+
+  * nvm / npm / pnpm / yarn
+  * pypy / pip / pipenv / venv / virtualenv
+  * sdkmanager / maven / gradle
+  * nuget / dotnet cli
+]
+
+---
+
+class: middle, center
+name: test
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+.left-column[
+  # Plan
+  # Build
+  # Test
+]
+.right-column[
+  ## To TDD or not to TDD
+  * Unit testing
+  * Integration testing
+  * Automation tool
+]
+---
+
+class: middle, center
+name: test
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+.left-column[
+  # Plan
+  # Build
+  # Test
+  ### Unit
+]
+.right-column[
+  ## Unit testing should test units
+
+  * How big is too big to be a 'unit'
+  * Stubbing
+  * Mocking
+]
+---
+
+class: middle, center
+name: test
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+.left-column[
+  # Plan
+  # Build
+  # Test
+  ### Unit
+  ### Integration
+]
+.right-column[
+  ## The consistency conundrum
+
+  * Do we test all integrations or a subset
+  * How do we ensure the state at the 'start' of the test
+]
+---
+
+class: middle, center
+name: test
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+.left-column[
+  # Plan
+  # Build
+  # Test
+  ### Unit
+  ### Integration
+  ### Automation
+]
+.right-column[
+  ## Ensuring that all forms of testing are automated
+
+  * We need to run tests automatically
+  * Unit testing - usually incorporated into build tool
+  * Integration testing - harder to incorporate
+  
+]
+---
+
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  # Test
+  # Deploy
+]
+.right-column[
+  ## How do we get our program to the user?
+  * Web applications
+    * Front-end (HTML, CSS and JS)
+    * Back-end hosting 
+      * Bepends on your chosen language
+      * Basically these are desktop applications
+]
+
+---
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  # Test
+  # Deploy
+]
+.right-column[
+  ## How do we get our program to the user?
+  * Mobile applications
+    * There are *many* app stores
+    * Ionic / React native
+]
+
+---
+
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  # Test
+  # Deploy
+]
+.right-column[
+  ## How do we get our program to the user?
+  * Traditional (desktop) applications
+    * apt / brew / winget package installers
+    * Multi-platform builds are not easy
+    * flatpack / docker
+]
+
+---
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  # Test
+  # Deploy
+  ### Build output
+]
+.right-column[
+  ## Built packages (often called artefacts/bundles)
+
+  * Output of the build cycle
+    * One or more artefacts/packages/bundles
+    * May or may not be linked a release
+  * Web application deployment
+    * Front-end(s)
+    * Back-end(s)
+]
+
+---
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  # Test
+  # Deploy
+  ### Build output
+  ### Infrastructure
+]
+.right-column[
+  ## Before we can deploy, we need to know where we are deploying too
+
+  * Front-end 
+    * GitHub pages
+    * Azure FrontDoor
+  * Back-end
+    * Node.js Azure web-app
+  * Preferably this should be handled by IaC (but let's click the buttons instead)
+]
+
+---
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Build
+  # Test
+  # Deploy
+  ### Build output
+  ### Infrastructure
+  ### Deployment
+]
+.right-column[
+  ## Now that we know where we are deploying to, we can automate the deployments
+
+  * Front-end 
+    * GitHub pages
+    * Azure FrontDoor
+  * Back-end
+    * Azure web-app (nodejs runtime)
+]
+
+---
+
+class: middle, center
+name: deploy
+
+background-size: contain
+background-position: top right
+background-repeat: no-repeat
+background-image: url(./images/bbd-intro.jpg)
+
+.left-column[
+  # Plan
+  # Build
+  # Test
+  # Deploy
+  # Plan
+]
+.right-column[
+  Now we are back at planing.
+]
+
+---
+class: middle, center
+name: questions
+background-position: center center
+background-size: cover
+background-repeat: no-repeat
+background-image: url(./images/bbd-questions.jpg)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({ ratio: "16:9", highlightLines:true });
+    </script>
+  </body>
+</html>
